@@ -1,0 +1,6 @@
+/Users/matteomanzo/Projects/BookParsing/BookParsing/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/matteomanzo/Projects/BookParsing/BookParsing/bin/Debug/nunit.framework.dll
+/Users/matteomanzo/Projects/BookParsing/BookParsing/bin/Debug/BookParsing.dll.mdb
+/Users/matteomanzo/Projects/BookParsing/BookParsing/bin/Debug/BookParsing.dll
+/Users/matteomanzo/Projects/BookParsing/BookParsing/obj/Debug/BookParsing.dll
+/Users/matteomanzo/Projects/BookParsing/BookParsing/obj/Debug/BookParsing.dll.mdb
