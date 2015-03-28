@@ -1,6 +1,16 @@
-﻿<Properties StartupItem="BookParser/BookParsing.csproj">
+﻿<Properties StartupItem="BookParsing/BookParsing.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookParsing/ElaborateText.cs">
+    <Files>
+      <File FileName="BookParsing/ElaborateTextTest.cs" Line="20" Column="36" />
+      <File FileName="BookParsing/ElaborateText.cs" Line="23" Column="18" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

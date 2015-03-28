@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace BookParsing
 {
@@ -12,6 +14,13 @@ namespace BookParsing
 				input = input.Replace(character, "");
 			}
 			return input;
+		}
+
+		public string SplitWords (string input)
+		{
+			List<string> WordList = input.Split (' ').ToList ();
+			string result = String.Join (System.Environment.NewLine, WordList.ToArray ());
+			return result;
 		}
 	}
 }
