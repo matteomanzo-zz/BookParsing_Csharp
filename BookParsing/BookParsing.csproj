@@ -36,6 +36,8 @@
   <ItemGroup>
     <Compile Include="ElaborateTextTest.cs" />
     <Compile Include="ElaborateText.cs" />
+    <Compile Include="PrimeNumber.cs" />
+    <Compile Include="PrimeNumberTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

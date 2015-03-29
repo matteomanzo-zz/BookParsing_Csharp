@@ -11,15 +11,15 @@ namespace BookParsing
 		[Test ()]
 		public void ItShouldStripPunctuationAndNumbers ()
 		{
-			ElaborateText file = new ElaborateText ();
-			Assert.AreEqual ("I like  code", file.StripText("I, like 2 code."));
+			ElaborateText text = new ElaborateText ();
+			Assert.AreEqual ("I like  code", text.StripText("I, like 2 code."));
 		}
 
 		[Test()]
 		public void ItShouldSplitWordsAndListThem ()
 		{
-			ElaborateText file = new ElaborateText ();
-			var result = file.SplitWords("I like to learn");
+			ElaborateText text = new ElaborateText ();
+			var result = text.SplitWords("I like to learn");
 			Assert.That (result, Has.Member("I"));
 			Assert.That (result, Has.Member("like"));
 			Assert.That (result, Has.No.Member("to learn"));
@@ -28,9 +28,9 @@ namespace BookParsing
 		[Test()]
 		public void ItShouldReturnTheTimesWordsAppear ()
 		{
-			ElaborateText file = new ElaborateText ();
+			ElaborateText text = new ElaborateText ();
 			List<string> TestList = "Hey I know you Hey you know how to code".Split (' ').ToList ();
-			Dictionary<string, int> TestDictionary = file.CountWords (TestList);
+			Dictionary<string, int> TestDictionary = text.CountWords (TestList);
 			foreach (KeyValuePair<string, int> word in TestDictionary) {
 				Assert.AreEqual (TestDictionary ["Hey"], 2 );
 				Assert.AreEqual (TestDictionary ["know"], 2);
