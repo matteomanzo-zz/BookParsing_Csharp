@@ -1,5 +1,7 @@
 ﻿using NUnit.Framework;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace BookParsing
 {
@@ -17,7 +19,10 @@ namespace BookParsing
 		public void ItShouldSplitWordsAndListThem ()
 		{
 			ElaborateText file = new ElaborateText ();
-			Assert.AreEqual ("I\nlike\nto\nlearn", file.SplitWords ("I like to learn"));
+			var result = file.SplitWords("I like to learn");
+			Assert.That (result, Has.Member("I"));
+			Assert.That (result, Has.Member("like"));
+			Assert.That (result, Has.No.Member("to learn"));
 		}
 	}
 }

@@ -16,11 +16,11 @@ namespace BookParsing
 			return input;
 		}
 
-		public string SplitWords (string input)
+		public List<string> SplitWords (string input)
 		{
 			List<string> WordList = input.Split (' ').ToList ();
-			string result = String.Join (System.Environment.NewLine, WordList.ToArray ());
-			return result;
+			return WordList;
+
 		}
 	}
 }
