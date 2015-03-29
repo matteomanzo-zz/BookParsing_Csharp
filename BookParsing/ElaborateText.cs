@@ -20,7 +20,21 @@ namespace BookParsing
 		{
 			List<string> WordList = input.Split (' ').ToList ();
 			return WordList;
+		}
 
+		public Dictionary<string, int> CountWords (List<string> list)
+		{
+			Dictionary<string, int> WordDictionary = new Dictionary<string, int> ();
+			foreach (string  word in list) {
+				if (word.Length >= 2) {
+					if (WordDictionary.ContainsKey (word)) {
+						WordDictionary [word]++;
+					} else {
+						WordDictionary [word] = 1;
+					}
+				}
+			}
+			return WordDictionary;
 		}
 	}
 }

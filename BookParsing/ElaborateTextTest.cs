@@ -24,6 +24,22 @@ namespace BookParsing
 			Assert.That (result, Has.Member("like"));
 			Assert.That (result, Has.No.Member("to learn"));
 		}
+
+		[Test()]
+		public void ItShouldReturnTheTimesWordsAppear ()
+		{
+			ElaborateText file = new ElaborateText ();
+			List<string> TestList = "Hey I know you Hey you know how to code".Split (' ').ToList ();
+			Dictionary<string, int> TestDictionary = file.CountWords (TestList);
+			foreach (KeyValuePair<string, int> word in TestDictionary) {
+				Assert.AreEqual (TestDictionary ["Hey"], 2 );
+				Assert.AreEqual (TestDictionary ["know"], 2);
+				Assert.AreEqual (TestDictionary ["you"], 2);
+				Assert.AreEqual (TestDictionary ["how"], 1);
+				Assert.AreEqual (TestDictionary ["code"], 1);
+				Assert.AreNotEqual (TestDictionary ["to"], 2);
+			}
+		}
 	}
 }
 
