@@ -12,7 +12,7 @@ namespace BookParsing
 		public void ItShouldStripPunctuationAndNumbers ()
 		{
 			ElaborateText text = new ElaborateText ();
-			Assert.AreEqual ("I like  code", text.StripText("I, like 2 code."));
+			Assert.AreEqual ("i like  code", text.StripText("I, like 2 code."));
 		}
 
 		[Test()]

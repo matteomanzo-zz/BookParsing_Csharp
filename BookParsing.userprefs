@@ -1,14 +1,24 @@
 ﻿<Properties StartupItem="BookParsing/BookParsing.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BookParsing/ProgramTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookParsing/ElaborateText.cs">
     <Files>
-      <File FileName="BookParsing/ElaborateTextTest.cs" Line="2" Column="1" />
-      <File FileName="BookParsing/PrimeNumber.cs" Line="12" Column="4" />
-      <File FileName="BookParsing/Program.cs" Line="26" Column="42" />
-      <File FileName="BookParsing/ProgramTest.cs" Line="20" Column="1" />
-      <File FileName="BookParsing/ElaborateText.cs" Line="11" Column="60" NotebookId="1" />
-      <File FileName="BookParsing/PrimeNumberTest.cs" Line="15" Column="40" NotebookId="1" />
+      <File FileName="BookParsing/ProgramTest.cs" Line="14" Column="4" />
+      <File FileName="BookParsing/ElaborateText.cs" Line="23" Column="20" />
+      <File FileName="BookParsing/ElaborateTextTest.cs" Line="24" Column="30" />
+      <File FileName="BookParsing/Program.cs" Line="26" Column="5" NotebookId="1" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True">
+          <Node name="BookParsing" expanded="True">
+            <Node name="BookParsing" expanded="True">
+              <Node name="ElaborateTextTest" expanded="True" />
+              <Node name="PrimeNumberTest" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
