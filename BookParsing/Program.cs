@@ -9,8 +9,8 @@ namespace BookParsing
 		static void Main(string[] args)
 		{
 			Program program = new Program ();
-			string input = program.ReadFromFile ();
-			program.PrintOnScreen(input);
+			string text = program.ReadFromFile ();
+			program.PrintOnScreen(program.Elaborate(text));
 		}
 
 		public string ReadFromFile()
@@ -20,14 +20,19 @@ namespace BookParsing
 			return input;
 		}
 
-		public void PrintOnScreen(string input)
+		public Dictionary<string, int> Elaborate(string input)
 		{
 			ElaborateText file = new ElaborateText ();
-			PrimeNumber number = new PrimeNumber ();
 			input = file.StripText (input);
 			List<string> wordList = file.SplitWords (input);
 			Dictionary<string, int> count = file.CountWords (wordList);
-			foreach (KeyValuePair<string, int> word in count) {
+			return count;
+		}
+
+		public void PrintOnScreen(Dictionary<string, int> input)
+		{
+			PrimeNumber number = new PrimeNumber ();
+			foreach (KeyValuePair<string, int> word in input) {
 				string prime = "";
 				if (number.IsPrime (word.Value)) {
 					prime = "√";
