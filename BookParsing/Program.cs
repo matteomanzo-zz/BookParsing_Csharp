@@ -34,18 +34,8 @@ namespace BookParsing
 		{
 			PrimeNumber number = new PrimeNumber ();
 			foreach (KeyValuePair<string, int> word in input) {
-				string prime = "";
-				if (number.IsPrime (word.Value)) {
-					prime = "√";
-				} else {
-					prime = "x";
-				}
-				string space;
-				if (word.Key.Length >= 8) {
-					space = "\t \t";
-				} else {
-					space = "\t \t \t";
-				}
+				string prime = (number.IsPrime (word.Value)) ? "√" : "x" ;
+				string space = (word.Key.Length >= 8) ? "\t \t": "\t \t \t";
 				Console.Write (word.Key + space + "  times: " + word.Value + "\t" + "prime: " + prime + "\n");
 			}
 		}
