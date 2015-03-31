@@ -15,7 +15,7 @@ namespace BookParsing
 
 		public string ReadFromFile()
 		{
-			Console.WriteLine ("Type some text or a file root: ");
+			Console.WriteLine ("Type some text or a file (has to be inside the folder): ");
 			string input = Console.ReadLine ();
 			if (File.Exists(input)) input = File.ReadAllText (input);
 			return input;
