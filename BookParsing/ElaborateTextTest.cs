@@ -8,35 +8,50 @@ namespace BookParsing
 	[TestFixture ()]
 	public class ElaborateTextTest
 	{
+		ElaborateText text;
+
+		[SetUp()]
+		public void Init()
+		{
+			text = new ElaborateText();
+		}
+
 		[Test ()]
 		public void ItShouldStripPunctuationAndNumbers ()
 		{
-			ElaborateText text = new ElaborateText ();
 			Assert.AreEqual ("i like  code", text.StripText("I, like 2 code."));
 		}
 
 		[Test()]
 		public void ItShouldSplitWordsAndListThem ()
 		{
-			ElaborateText text = new ElaborateText ();
 			var result = text.SplitWords("I like to learn");
-			Assert.That (result, Has.Member("I"));
 			Assert.That (result, Has.Member("like"));
+		}
+
+		[Test()]
+		public void ItShouldNotLeaveWordsTogether ()
+		{
+			var result = text.SplitWords("I like to learn");
 			Assert.That (result, Has.No.Member("to learn"));
 		}
 
 		[Test()]
-		public void ItShouldReturnTheTimesWordsAppear ()
+		public void ItShouldReturnTheRightTimesWordsAppear ()
 		{
-			ElaborateText text = new ElaborateText ();
 			List<string> TestList = "Hey I know you Hey you know how to code".Split (' ').ToList ();
 			Dictionary<string, int> TestDictionary = text.CountWords (TestList);
 			foreach (KeyValuePair<string, int> word in TestDictionary) {
-				Assert.AreEqual (TestDictionary ["Hey"], 2 );
-				Assert.AreEqual (TestDictionary ["know"], 2);
-				Assert.AreEqual (TestDictionary ["you"], 2);
-				Assert.AreEqual (TestDictionary ["how"], 1);
-				Assert.AreEqual (TestDictionary ["code"], 1);
+				Assert.AreEqual (TestDictionary ["Hey"], 2);
+			}
+		}
+
+		[Test()]
+		public void ItShouldNotReturnTheWrongTimesWordsAppear ()
+		{
+			List<string> TestList = "Hey I know you Hey you know how to code".Split (' ').ToList ();
+			Dictionary<string, int> TestDictionary = text.CountWords (TestList);
+			foreach (KeyValuePair<string, int> word in TestDictionary) {
 				Assert.AreNotEqual (TestDictionary ["to"], 2);
 			}
 		}

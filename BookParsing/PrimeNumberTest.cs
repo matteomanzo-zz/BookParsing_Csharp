@@ -6,12 +6,24 @@ namespace BookParsing
 	[TestFixture()]
 	public class PrimeNumberTest
 	{
-		[Test()]
-		public void ItShouldCheckIfANumberIsPrime ()
+		PrimeNumber number;
+
+		[SetUp()]
+		public void Init()
 		{
-			PrimeNumber number = new PrimeNumber ();
+			number = new PrimeNumber();
+		}
+
+		[Test()]
+		public void ItShouldReturnTrueIfANumberIsPrime ()
+		{
 			Assert.IsTrue (number.IsPrime (76543));
 			Assert.IsTrue (number.IsPrime (2));
+		}
+
+		[Test()]
+		public void ItShouldReturnFalseIfANumberIsNotPrime ()
+		{
 			Assert.IsFalse (number.IsPrime (1));
 			Assert.IsFalse (number.IsPrime (2050));
 		}
