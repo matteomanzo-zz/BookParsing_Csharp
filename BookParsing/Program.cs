@@ -15,6 +15,7 @@ namespace BookParsing
 
 		public string ReadFromFile()
 		{
+			Console.WriteLine ("Type some text or a file root: ");
 			string input = Console.ReadLine ();
 			if (File.Exists(input)) input = File.ReadAllText (input);
 			return input;
@@ -39,7 +40,13 @@ namespace BookParsing
 				} else {
 					prime = "x";
 				}
-				Console.Write (word.Key + "\t" + "\t" + "  times: " + word.Value + "\t" + "prime: " + prime + "\n");
+				string space;
+				if (word.Key.Length >= 8) {
+					space = "\t \t";
+				} else {
+					space = "\t \t \t";
+				}
+				Console.Write (word.Key + space + "  times: " + word.Value + "\t" + "prime: " + prime + "\n");
 			}
 		}
 

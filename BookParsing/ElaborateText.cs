@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Linq;
 
 namespace BookParsing
@@ -9,12 +10,11 @@ namespace BookParsing
 		public string StripText (string input)
 		{
 			input = input.ToLower ();
-			string[] CharsToRemove = { ";", ",", ".", "'", "(", ")", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "\n", "\t", "\r" };
-			foreach(string character in CharsToRemove)
-			{
-				input = input.Replace(character, "");
-			}
-			return input;
+			string CharsToRemove = @"[\W]";
+			Regex rgx = new Regex (CharsToRemove);
+			string replace = " ";
+			string result = rgx.Replace (input, replace);
+			return result;
 		}
 
 		public List<string> SplitWords (string input)

@@ -4,3 +4,7 @@
 /Users/matteomanzo/Projects/BookParsing/BookParsing/bin/Debug/BookParsing.dll
 /Users/matteomanzo/Projects/BookParsing/BookParsing/obj/Debug/BookParsing.dll
 /Users/matteomanzo/Projects/BookParsing/BookParsing/obj/Debug/BookParsing.dll.mdb
+/Users/matteomanzo/Projects/BookParsing/BookParsing/bin/Debug/BookParsing.exe.mdb
+/Users/matteomanzo/Projects/BookParsing/BookParsing/bin/Debug/BookParsing.exe
+/Users/matteomanzo/Projects/BookParsing/BookParsing/obj/Debug/BookParsing.exe
+/Users/matteomanzo/Projects/BookParsing/BookParsing/obj/Debug/BookParsing.exe.mdb
