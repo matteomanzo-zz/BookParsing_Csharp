@@ -10,10 +10,8 @@ namespace BookParsing
 		public string StripText (string input)
 		{
 			input = input.ToLower ();
-			string charsToRemove = @"[\W\0-9]";
-			Regex rgx = new Regex (charsToRemove);
-			string replace = " ";
-			string result = rgx.Replace (input, replace);
+			Regex rgx = new Regex (@"[\W\0-9]");
+			string result = rgx.Replace (input, " ");
 			return result;
 		}
 
