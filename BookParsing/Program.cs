@@ -15,7 +15,7 @@ namespace BookParsing
 
 		public string ReadFromFile()
 		{
-			Console.WriteLine ("Type some text or a file (has to be inside the folder): ");
+			Console.WriteLine ("Type some text or a file name (it has to be inside the folder): ");
 			string input = Console.ReadLine ();
 			if (File.Exists(input)) input = File.ReadAllText (input);
 			return input;
@@ -39,6 +39,5 @@ namespace BookParsing
 				Console.Write (word.Key + space + "  times: " + word.Value + "\t" + "prime: " + prime + "\n");
 			}
 		}
-
 	}
 }
