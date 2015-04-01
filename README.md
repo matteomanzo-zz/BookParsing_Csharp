@@ -30,7 +30,7 @@ And execute it with
 ```
 mono Program.exe
 ```
-You can use the file `book.txt`, wich is already in the folder. <br/> 
+You can use the file `book.txt`, which is already in the folder. <br/> 
 Run the tests opening the `BookParsing.sln` solution on Xamarin and `Run unit tests`.
 
 ##Thoughts on the project
