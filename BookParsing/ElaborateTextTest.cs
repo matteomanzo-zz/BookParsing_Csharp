@@ -19,7 +19,7 @@ namespace BookParsing
 		[Test ()]
 		public void ItShouldStripPunctuationAndNumbers ()
 		{
-			Assert.AreEqual ("i like  code", text.StripText("I, like 2 code."));
+			Assert.AreEqual ("i  like   code ", text.StripText("I, like 2 code."));
 		}
 
 		[Test()]
