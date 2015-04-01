@@ -30,7 +30,8 @@ And execute it with
 ```
 mono Program.exe
 ```
-Run the tests opening the `BookParsing.sln` file on Xamarin and `Run unit tests`.
+You can use the file `book.txt`, which is already in the folder. <br/> 
+Run the tests opening the `BookParsing.sln` solution on Xamarin and `Run unit tests`.
 
 ##Thoughts on the project
 Keeping the methods short it is very hard using a strong typed language like C#. At the same time though, typing what kind of input and output you want to manipulate helps a lot about thinking how to the design the app.
