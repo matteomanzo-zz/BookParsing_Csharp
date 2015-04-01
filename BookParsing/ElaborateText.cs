@@ -10,32 +10,32 @@ namespace BookParsing
 		public string StripText (string input)
 		{
 			input = input.ToLower ();
-			string CharsToRemove = @"[\W]";
-			Regex rgx = new Regex (CharsToRemove);
+			string charsToRemove = @"[\W]";
+			Regex rgx = new Regex (charsToRemove);
 			string replace = " ";
 			string result = rgx.Replace (input, replace);
 			return result;
 		}
 
-		public List<string> SplitWords (string input)
+		public string[] SplitWords (string input)
 		{
-			List<string> WordList = input.Split (' ').ToList ();
-			return WordList;
+			string[] wordArray = input.Split (' ');
+			return wordArray;
 		}
 
-		public Dictionary<string, int> CountWords (List<string> list)
+		public Dictionary<string, int> CountWords (string[] array)
 		{
-			Dictionary<string, int> WordDictionary = new Dictionary<string, int> ();
-			foreach (string  word in list) {
+			Dictionary<string, int> wordDictionary = new Dictionary<string, int> ();
+			foreach (string  word in array) {
 				if (word.Length >= 2) {
-					if (WordDictionary.ContainsKey (word)) {
-						WordDictionary [word]++;
+					if (wordDictionary.ContainsKey (word)) {
+						wordDictionary [word]++;
 					} else {
-						WordDictionary [word] = 1;
+						wordDictionary [word] = 1;
 					}
 				}
 			}
-			return WordDictionary;
+			return wordDictionary;
 		}
 	}
 }

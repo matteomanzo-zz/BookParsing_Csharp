@@ -23,7 +23,7 @@ namespace BookParsing
 		}
 
 		[Test()]
-		public void ItShouldSplitWordsAndListThem ()
+		public void ItShouldSplitWords ()
 		{
 			var result = text.SplitWords("I like to learn");
 			Assert.That (result, Has.Member("like"));
@@ -39,20 +39,20 @@ namespace BookParsing
 		[Test()]
 		public void ItShouldReturnTheRightTimesWordsAppear ()
 		{
-			List<string> TestList = "Hey I know you Hey you know how to code".Split (' ').ToList ();
-			Dictionary<string, int> TestDictionary = text.CountWords (TestList);
-			foreach (KeyValuePair<string, int> word in TestDictionary) {
-				Assert.AreEqual (TestDictionary ["Hey"], 2);
+			string[] testArray = "Hey I know you Hey you know how to code".Split (' ');
+			Dictionary<string, int> testDictionary = text.CountWords (testArray);
+			foreach (KeyValuePair<string, int> word in testDictionary) {
+				Assert.AreEqual (testDictionary ["Hey"], 2);
 			}
 		}
 
 		[Test()]
 		public void ItShouldNotReturnTheWrongTimesWordsAppear ()
 		{
-			List<string> TestList = "Hey I know you Hey you know how to code".Split (' ').ToList ();
-			Dictionary<string, int> TestDictionary = text.CountWords (TestList);
-			foreach (KeyValuePair<string, int> word in TestDictionary) {
-				Assert.AreNotEqual (TestDictionary ["to"], 2);
+			string[] testArray = "Hey I know you Hey you know how to code".Split (' ');
+			Dictionary<string, int> testDictionary = text.CountWords (testArray);
+			foreach (KeyValuePair<string, int> word in testDictionary) {
+				Assert.AreNotEqual (testDictionary ["to"], 2);
 			}
 		}
 	}

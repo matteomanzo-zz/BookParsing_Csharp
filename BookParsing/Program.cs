@@ -25,8 +25,8 @@ namespace BookParsing
 		{
 			ElaborateText file = new ElaborateText ();
 			input = file.StripText (input);
-			List<string> wordList = file.SplitWords (input);
-			Dictionary<string, int> count = file.CountWords (wordList);
+			string[] wordArray = file.SplitWords (input);
+			Dictionary<string, int> count = file.CountWords (wordArray);
 			return count;
 		}
 
