@@ -40,6 +40,7 @@
     <Compile Include="PrimeNumber.cs" />
     <Compile Include="PrimeNumberTest.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
