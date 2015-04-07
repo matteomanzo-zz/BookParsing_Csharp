@@ -34,5 +34,5 @@ You can use the file `book.txt`, which is already in the folder. <br/>
 Run the tests opening the `BookParsing.sln` solution on Xamarin and `Run unit tests`.
 
 ##Thoughts on the project
-Keeping the methods short it is very hard using a strong typed language like C#. At the same time though, typing what kind of input and output you want to manipulate helps a lot about thinking how to the design the app.
-It was very challenging to test drive as I wasn't totally familiar with this language but I found very interesting the way NUnit works.
+Keeping the methods short it is very hard using a strong typed language like C#. At the same time though, explicity expecting what kind of input and output you want to manipulate helps a lot about thinking how to the design the app.
+It was very challenging to test drive as I wasn't totally familiar with this language but I found very interesting the way NUnit works for unit and integration tests like what the console outputs on the screen.
