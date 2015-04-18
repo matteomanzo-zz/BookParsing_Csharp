@@ -1,11 +1,13 @@
 ﻿<Properties StartupItem="BookParsing/BookParsing.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BookParsing/ProgramTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookParsing/ElaborateTextTest.cs">
     <Files>
-      <File FileName="BookParsing/Program.cs" Line="20" Column="61" />
-      <File FileName="BookParsing/ElaborateTextTest.cs" Line="10" Column="3" />
-      <File FileName="BookParsing/ProgramTest.cs" Line="35" Column="66" />
+      <File FileName="BookParsing/Program.cs" Line="1" Column="1" />
+      <File FileName="BookParsing/ElaborateTextTest.cs" Line="1" Column="1" />
+      <File FileName="BookParsing/ProgramTest.cs" Line="1" Column="1" />
       <File FileName="BookParsing/ElaborateText.cs" Line="1" Column="1" />
+      <File FileName="BookParsing/PrimeNumber.cs" Line="1" Column="1" />
+      <File FileName="BookParsing/PrimeNumberTest.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

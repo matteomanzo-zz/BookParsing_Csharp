@@ -35,12 +35,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ElaborateTextTest.cs" />
-    <Compile Include="ElaborateText.cs" />
     <Compile Include="PrimeNumber.cs" />
     <Compile Include="PrimeNumberTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramTest.cs" />
+    <Compile Include="ExtractWords.cs" />
+    <Compile Include="ExtractWordsTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

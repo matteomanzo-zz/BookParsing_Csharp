@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace BookParsing
 {
-	public class ElaborateText
+	public class ExtractWords
 	{
 		public string StripText (string input)
 		{
@@ -37,4 +37,3 @@ namespace BookParsing
 		}
 	}
 }
-	

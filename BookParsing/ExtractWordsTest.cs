@@ -6,14 +6,14 @@ using System.Linq;
 namespace BookParsing
 {
 	[TestFixture ()]
-	public class ElaborateTextTest
+	public class ExtractWordsTest
 	{
-		ElaborateText text;
+		ExtractWords text;
 
 		[SetUp()]
 		public void Init()
 		{
-			text = new ElaborateText();
+			text = new ExtractWords();
 		}
 
 		[Test ()]
@@ -57,4 +57,3 @@ namespace BookParsing
 		}
 	}
 }
-

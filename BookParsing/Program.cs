@@ -23,7 +23,7 @@ namespace BookParsing
 
 		public Dictionary<string, int> Elaborate(string input)
 		{
-			ElaborateText file = new ElaborateText ();
+			ExtractWords file = new ExtractWords ();
 			input = file.StripText (input);
 			string[] wordArray = file.SplitWords (input);
 			Dictionary<string, int> count = file.CountWords (wordArray);
